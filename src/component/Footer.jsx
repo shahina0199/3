@@ -1,7 +1,7 @@
 
   
  
- const Footer = () => {
+ const Footer = (props) => {
     return (
        <div>
            <h2>{props.title}</h2> 
