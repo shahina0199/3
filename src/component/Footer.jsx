@@ -3,10 +3,10 @@
  
  const Footer = () => {
     return (
-        <div>
-            <h2>Shahina Lopa</h2>
-            
-            
+       <div>
+           <h2>{props.title}</h2> 
+           <p>{props.des}</p>
+
         </div>
     );
  };
