@@ -15,12 +15,12 @@ const Content = () => {
   
 
   return (
-    <div className="text-center">
-      <h1 className="text-center">Count:{count}</h1>
-      <button onClick={increaseCount} className="bordar:1px, padding:20px 30px">
+    <div>
+      <h1>Count:{count}</h1>
+      <button onClick={increaseCount} >
         Increase
       </button>
-      <button onClick={decreaseCount} className="bordar:1px, padding:20px 30px">
+      <button onClick={decreaseCount}>
       decrease
       </button>
 
