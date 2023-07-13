@@ -8,8 +8,8 @@ const App = () => {
   return (
     <>
       <Header title="My React App" />
-      <Footer title="Shahina Lopa" des="My Country is bast"/>
       <Content/>
+     <Footer title="Shahina Lopa" des="My Country is bast"/>
        
     </>
   );
