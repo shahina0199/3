@@ -1,32 +1,36 @@
 import { useState } from "react";
+ 
+  
+
+ 
+ 
 
  
 
-const Content = () => {
-  const [count, setCount] = useState(5);
-  console.log(count);
-  
-  const increaseCount = () => {
-    setCount(count + 1);
+function Content() {
+  const [text, setText] = useState('');
+  const [displayedText, setDisplayedText] = useState('');
+
+  const handleButtonClick = () => {
+    setDisplayedText(text);
   };
-  const decreaseCount= () => {
-    setCount(count - 1);
+
+  const handleTextAreaChange = (event) => {
+    setText(event.target.value);
   };
-  
 
   return (
     <div>
-      <h1>Count:{count}</h1>
-      <button onClick={increaseCount} >
-        Increase
-      </button>
-      <button onClick={decreaseCount}>
-      decrease
-      </button>
-
-      
+      <textarea
+        value={text}
+        onChange={handleTextAreaChange}
+        placeholder="Enter some text"
+      />
+      <br />
+      <button onClick={handleButtonClick}>Display Text</button>
+      <p>{displayedText}</p>
     </div>
   );
-};
+}
 
 export default Content;
