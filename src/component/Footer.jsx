@@ -1,14 +1,18 @@
 
   
  
- const Footer = (props) => {
-    return (
-       <div>
-           <h2>{props.title}</h2> 
-           <p>{props.des}</p>
 
-        </div>
-    );
- };
+  
  
- export default Footer;
+  
+ 
+
+function Footer() {
+  return (
+    <footer>
+      <p>Created by Shahina Lopa | Your favorite quote</p>
+    </footer>
+  );
+}
+
+export default Footer;
